@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let a = Number(prompt('Nhập điểm kiểm tra'));
+    let b = Number(prompt('Nhập điểm giữa kì'));
+    let c =Number(prompt('Nhập điểm cuối kì'));
+    diemtrungbinh=(a+2*b+3*c)/6;
+    if (diemtrungbinh >= 8){
+        alert('Học sinh xếp loại học lực giỏi');
+
+    }
+    else {
+        if (diemtrungbinh >=6.5)  {
+            alert('Học sinh xếp loại học lực khá');
+        }
+        else {
+            alert('Học sinh xếp loại học lực trung bình');
+        }
+    }
+</script>
+</body>
+</html>

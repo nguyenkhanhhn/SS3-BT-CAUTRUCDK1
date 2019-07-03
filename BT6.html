@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let sohangban =Number(prompt('Nhập số lượng sản phẩm bán ra'));
+    let giasanpham = Number(prompt('Nhập giá sản phẩm'));
+    let hoahong
+    if (sohangban < 100) {
+        hoahong=sohangban*giasanpham*5/100;
+    }
+    else {
+        if (sohangban<150){
+            hoahong=sohangban*giasanpham*8/100;
+
+        }
+        else {
+            hoahong=sohangban*giasanpham*10/100;
+        }
+    }
+    alert('Số tiền hoa hồng nhận được' +hoahong);
+</script>
+</body>
+</html>
